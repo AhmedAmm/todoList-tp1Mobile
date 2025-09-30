@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My To-Do List"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Input field for new task -->
+    <EditText
+        android:id="@+id/editTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a new task"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Add Task button -->
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- List of tasks -->
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
